@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function BreadTimer() {
-  const [wishTimer, setWishtimer] = useState("00:00");
-  const [resultado, setResultado] = useState("---");
+  const [wishTimer, setWishtimer] = useState("07:30");
+  const [resultado, setResultado] = useState("10:00");
 
   function timeCalculation(targetTime) {
     // 1. Obter a data e hora atual
@@ -65,26 +65,39 @@ export function BreadTimer() {
     setResultado(resultado);
   }
 
+  useEffect(() => {
+    mudarResultado();
+  }, []);
+
   return (
-    <div className="max-w-sm mx-auto flex flex-col px-4 py-6 bg-[#FFF6E5] rounded-2xl shadow-2xl ">
-      <header className="bg-[#FDEBC8] mx-auto">
-        <img src="" alt="" />
-        <h1 className="text-brown-900">Pão na Hora </h1>
+    <div className="w-fit mx-auto flex flex-col rounded-3xl bg-[#FFF6E5] overflow-hidden shadow-2xl ">
+      <header className="bg-[#FDEBC8] w-full p-4 flex gap-2 items-center text-2xl ">
+        🥖
+        <h1 className="font-bold">Pão na Hora </h1>
       </header>
-      <div>
-        <label>Selecione a hora que deseja que o pão esteja pronto</label>
-        <input
-          type="time"
-          onChange={(e) => setWishtimer(e.target.value)}
-          value={wishTimer}
-        />
-      </div>
-      <div>
-        <h2>
-          Você deve colocar o timer para:
-          <strong>{resultado}</strong>
+      <div className="bg-[#FFF6E5] p-4">
+        <h2 className="mb-2 text-xl font-semibold">
+          A que horas você quer que o pão esteja pronto?
         </h2>
-        <button onClick={mudarResultado}>Calcular novo timer</button>
+        <div className="text-base font-medium">
+          <label className="block mb-1">Hora desejada</label>
+          <input
+            type="time"
+            className="w-full px-4 py-2 rounded-md border border-[#FDEBC8]"
+            onChange={(e) => setWishtimer(e.target.value)}
+            value={wishTimer}
+          />
+        </div>
+        <div className="bg-white p-4 text-2xl text-center white border-[#FDEBC8] rounded-2xl border my-4 text-amber-950">
+          <h2>Você deve colocar o timer para:</h2>
+          <p className="text-3xl font-bold">{resultado}</p>
+        </div>
+        <button
+          className="bg-orange-400 text-white w-full py-2 rounded-xl font-bold px-4"
+          onClick={mudarResultado}
+        >
+          Calcular nova hora
+        </button>
       </div>
     </div>
   );
