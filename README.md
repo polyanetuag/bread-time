@@ -15,7 +15,8 @@ O Pão na Hora é uma aplicação web criada para facilitar o controle do tempo 
 
 
 ## 🚀 Tecnologias Utilizadas
-
+- [React](https://react.dev/)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ---
 ## 📦 Como instalar e iniciar o projeto
