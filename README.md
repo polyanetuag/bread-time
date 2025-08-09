@@ -24,7 +24,7 @@ O Pão na Hora é uma aplicação web criada para facilitar o controle do tempo 
 # Clonar o repositório
 $ https://github.com/polyanetuag/bread-time.git
 
-# Entrar na pasta server
+# Entrar na pasta
 $ cd bread-time
 
 # Instalar as dependências
