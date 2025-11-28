@@ -11,7 +11,7 @@
 
 
 ## 📝 Sobre
-O ***Pão na Hora*** é uma aplicação criada para facilitar o controle do tempo de preparo do pão feito na panificadora, permitindo que ele esteja pronto exatamente na hora desejada.
+O ***Pão na Hora*** é uma aplicação criada para facilitar o controle do tempo de preparo do pão feito na panificadora, permitindo que ele esteja pronto exatamente na hora desejada, principalmente se for para um pão quentinho de manhã!
 
 Funciona da seguinte maneira: basta informar o horário em que quer que o pão esteja pronto e a aplicação irá  calcular o horário ideal para programar a panificadora.
 
