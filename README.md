@@ -1,5 +1,5 @@
 <h1 align="center">
-    🍞 sPão na Hora
+    🍞 Pão na Hora
 </h1>
 
 
