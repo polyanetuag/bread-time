@@ -21,7 +21,7 @@ Funciona da seguinte maneira: basta informar o horário em que quer que o pão e
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 
-## 📦 Como instalar via terminal
+## 📦 Como instalar
 
 ```bash
 # Clonar o repositório
